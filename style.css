@@ -1,0 +1,120 @@
+body
+{
+    height:100vh;
+    background:url(assets/background.jpeg) no-repeat center center/cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#add-task-container
+{
+    width:350px;
+    padding:20px 15px;
+    background-color: #5f5f5f61;
+    border-radius: 5px;
+ 
+    display: flex;
+}
+
+input
+{
+    flex:5;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size:1.2rem;
+    padding:5px;
+    background-color:#ffffff54
+}
+#input-task::placeholder
+{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#add-task
+{
+    flex:1;
+    transition: .3s;
+    font-size:1.2rem;
+    padding:5px;
+    background-color:#ffffff3d;
+    color:rgb(255, 255, 255);
+   border:none;
+    border-radius:6px;
+}
+
+@font-face {
+    font-family: Trajan;
+    src: url(assets/Trajan\ Pro.ttf);
+}
+
+#input-task
+{
+border-top:none;
+border-left:none;
+border-right:none;
+}
+
+input[type="text"]:focus {
+    
+    background-color:#ffffff7c;
+   border: none; /* Remove default focus outline */
+   outline: none; 
+   border: 1px solid transparent;
+}
+#add-task:hover
+{
+    background-color:#ffffff7c;
+    cursor:pointer;
+}
+
+.task
+{
+    margin:30px;
+    padding:10px;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.368);
+    font-family: 'Courier New', Courier, monospace;
+    font-size:18px;
+}
+
+.deleteTask
+{
+    font-family:'Courier New', Courier, monospace;
+    margin-left:30px;
+    border:none;
+    color:rgb(83, 6, 6);
+    border-radius:4px;
+    font-style: normal;
+    background-color:rgba(240, 248, 255, 0.396);
+    transition: .3s;
+}
+.deleteTask:hover
+{
+    cursor:pointer;
+    background-color: rgba(240, 248, 255, 0.845);
+}
+
+.checkTask
+{
+    font-family:'Courier New', Courier, monospace;
+    margin-right:30px;
+    border:none;
+    color:rgba(2, 32, 12, 0.808);
+    border-radius:4px;
+    font-style: normal;
+    background-color:rgba(240, 248, 255, 0.396);
+    transition: .3s;
+}
+.checkTask:hover
+{
+    cursor:pointer;
+    background-color: rgba(240, 248, 255, 0.845);
+}
+
+.task li
+{
+    list-style:none;
+}
